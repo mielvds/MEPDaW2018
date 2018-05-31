@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// Print
+// ------------------------------------------------------------------
+
+@media print {
+
+	// print all slides in landscape orientation
+	// one slide per page
+
+	@page {
+		size:landscape;
+		}
+
+	.shower.full {
+		// override inline styles
+		// to allow printing from full screen view
+		transform:none!important;
+		}
+
+	.slide {
+		border: 0.05cm solid black;
+		page-break-inside:avoid;
+		page-break-after:always;
+		}
+	}

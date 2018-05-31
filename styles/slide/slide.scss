@@ -1,0 +1,49 @@
+// ------------------------------------------------------------------
+// Slide
+// ------------------------------------------------------------------
+// 1. Number ........... Red ribbon with page number
+// 2. Content .......... Various content types
+// 3. Modifiers......... Slide modifiers
+// 4. Elements ......... Content elements
+// ------------------------------------------------------------------
+
+$top: 32px;
+$left: 60px;
+$right: $left;
+
+.slide {
+
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	padding:$top $right 0 $left;
+	width:$width;
+	height:$height;
+	background:#FFF;
+
+	// Content
+
+	@import
+		'content/basic',
+		'content/quote',
+		'content/lists',
+		'content/table',
+		'content/code',
+		'content/footer';
+
+	// Modifiers
+
+	@import
+		'modifiers/title',
+		'modifiers/grid',
+		'modifiers/dark';
+
+	// Elements
+
+	@import
+		'elements/columns',
+		'elements/shout',
+		'elements/cover',
+		'elements/place';
+
+	}

@@ -1,0 +1,28 @@
+// ------------------------------------------------------------------
+// Basic
+// ------------------------------------------------------------------
+
+$headeroffset:-4px;
+h2 {
+	margin: $headeroffset 0 $lineheight;
+	padding:(($headersize - $headerlineheight) / 2)
+	        0
+	        (($lineheight - $headersize) / 2);
+	color:$grey;
+	font-size: $headersize;
+	font-weight: bold;
+	line-height: $headerlineheight;
+	min-height: 2 * $headerlineheight;
+	color: $color1;
+	}
+h3 {
+  color: $color1;
+  font-weight: bold;
+  margin-bottom: $lineheight;
+}
+p {
+	margin: 0 0 $lineheight $left;
+	&.note {
+		color:$grey;
+		}
+	}

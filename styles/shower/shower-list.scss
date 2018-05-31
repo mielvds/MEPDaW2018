@@ -1,0 +1,36 @@
+// ------------------------------------------------------------------
+// Shower List
+// ------------------------------------------------------------------
+
+.shower.list {
+
+	@each $scale in 4, 2, 1 {
+		@include scale($scale) {
+			padding-top:$gap / $scale;
+			}
+		}
+
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	background:lighten(black, 97%);
+
+	// IE10-11 scrolling fix
+
+	position:absolute;
+	clip:rect(0, auto, auto, 0);
+
+	// Elements
+	> :not(.slide) a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@import
+		'../caption/caption-list',
+		'../footer/footer-list',
+		'../slide/slide-list',
+		'../badge/badge-list';
+
+	}

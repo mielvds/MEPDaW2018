@@ -32,7 +32,7 @@
 </div>
 
 <div class="slide">
-	<h2>There are many sides<br>to preservation.<br><br>The context of this talk<br>is as follows...</h2>
+	<h2>There are many sides<br>to preservation.<br><br>This talk is on practice.</h2>
 	<img class="cover place top right" src="images/preservation.png" alt="">
 </div>
 
@@ -56,61 +56,6 @@
 	<figure class="cover">
 		<img src="images/webscale.jpg" alt="">
 	</figure>
-</div>
-
-<div class="slide">
-	<h2>What assumptions are there about data evolution?</h2>
-	<dl>
-		<dt>Versioned Data?</dt>
-		<dd>Provenance is a directed acyclic graph.</dd>
-		<dd>Multiple truths can exist at the same time.</dd>
-		<dt>Historical Data?</dt>
-		<dd>Provenance is a timeline.</dd>
-		<dd>Only truth can exist at the same time.</dd>
-	</dl>
-</div>
-
-<div class="slide">
-	<h2 class="shout">Archive or <i>Archiving</i>?</h2>
-</div>
-
-<div class="slide">
-	<h2>Linked Data archiving as the <b>product</b></h2>
-	<ul>
-		<li>RDF indexes for versioning
-			<ul>
-				<li>Dydra, Virtuoso, XRDF3X, ...</li>
-			</ul>
-		</li>
-		<li>Representing versions/time:
-			<ul>
-				<li>PROV, LDPatch, ...</li>
-			</ul>
-		</li>
-	</ul>
-	<h4 class="conclusion">Technical<br>(Increasingly) Popular research tracks.</h4>
-</div>
-
-<div class="slide">
-	<h2>Linked Data archiving as the <b>process</b></h2>
-	<ul>
-		<li>Some technological building blocks
-			<ul>
-				<li>Linked Data interfaces, change detection, publishing, crawling & querying</li>
-			</ul>
-		</li>
-	</ul>
-	<h4 class="conclusion">Technical, as well as Infrastructural & Societal.<br>Rather unknown territory (but there are
-		technologies).</h4>
-</div>
-
-<div class="toc slide" id="toc">
-	<h2>Preserving a Web of Linked Data</h2>
-	<ol>
-		<li><a href="#toc-why">Why archive the Web?</a></li>
-		<li><a href="#toc-how">How is the Web archived today?</a></li>
-		<li><a href="#toc-ld">Archiving the Web of Linked Data</a></li>
-	</ol>
 </div>
 
 <div class="slide">
@@ -161,61 +106,211 @@
 	</figure>
 </div>
 
-<div class="slide">
-	<h2>Persistent Identification</h2>
+<div class="toc slide" id="toc">
+	<h2>Preserving a Web of Linked Data</h2>
+	<ol>
+		<li><a href="#toc-past"><strong>Yesterday:</strong> Web archiving strategies</a></li>
+		<li><a href="#toc-present"><strong>Today:</strong> Tools for a Web of Linked Data</a></li>
+		<li><a href="#toc-future"><strong>Tomorrow:</strong> Things to keep in mind</a></li>
+	</ol>
 </div>
 
-
-<div class="slide" id="toc-future">
-	<h2>How is the Web archived today?</h2>
+<div class="toc slide" id="toc-past">
+	<h2>Preserving a Web of Linked Data</h2>
+	<ol>
+		<li><a href="#toc-past"><strong>Yesterday:</strong> Web archiving strategies</a></li>
+		<li><a href="#toc-present" class="grayed"><strong>Today:</strong> Tools for a Web of Linked Data</a></li>
+		<li><a href="#toc-future" class="grayed"><strong>Tomorrow:</strong> Things to keep in mind</a></li>
+	</ol>
 </div>
 
 <div class="slide">
 	<h2>Strategies</h2>
 	<ul>
-		<li>Versioning systems</li>
-		<li>Transactional</li>
-		<li>Snapshot</li>
+		<li>Observational: perceived as <em>discrete</em>
+			<ul>
+				<li>Snapshot</li>
+				<li>Web archive</li>
+
+			</ul>
+		</li>
+
+		<li>Historical: perceived as <em>continuous</em>
+			<ul>
+				<li>Versioning systems</li>
+				<li>Transactional</li>
+				<li>Notification-based</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="slide strategy">
+	<h2>Snapshot</h2>
+	<img class="cover place right bottom" src="images/snapshot.svg" alt="">
+</div>
+
+<div class="slide strategy">
+	<h2>Web archive</h2>
+	<img class="cover place bottom" src="images/traditional.svg" alt="">
+</div>
+
+<div class="slide strategy">
+	<h2>Versioning systems</h2>
+	<img class="cover place bottom" src="images/versioning.svg" alt="">
+</div>
+
+<div class="slide strategy">
+	<h2>Transactional</h2>
+	<img class="cover place bottom" src="images/transactional.svg" alt="">
+</div>
+
+<div class="slide strategy">
+	<h3>If a representation<br>changes and nobody is <br>around to see it,<br>should it be archived?</h3>
+	<img class="cover place top right" src="images/transaction-tree.jpg" alt="">
+</div>
+
+<div class="slide strategy">
+	<h2>Notification-based</h2>
+	<img class="cover place bottom" src="images/Notification.svg" alt="">
+</div>
+
+<div class="slide">
+	<h2>Memento: travelling to the Web of the Past</h2>
+	<img class="place center" src="images/memento.png" alt="">
+</div>
+
+<div class="toc slide" id="#toc-present">
+	<h2>Preserving a Web of Linked Data</h2>
+	<ol>
+		<li><a href="#toc-past" class="grayed"><strong>Yesterday:</strong> Web archiving strategies</a></li>
+		<li><a href="#toc-present"><strong>Today:</strong> Tools for a Web of Linked Data</a></li>
+		<li><a href="#toc-future" class="grayed"><strong>Tomorrow:</strong> Things to keep in mind</a></li>
+	</ol>
+</div>
+
+<div class="slide">
+	<h2 class="shout">Archive or <i>Archiving</i>?</h2>
+</div>
+
+<div class="slide">
+	<h2>Linked Data archiving as the <b>product</b></h2>
+	<ul>
+		<li>RDF indexes for versioning
+			<ul>
+				<li>Dydra, Virtuoso, XRDF3X, ...</li>
+			</ul>
+		</li>
+		<li>Representing versions/time:
+			<ul>
+				<li>PROV, LDPatch, ...</li>
+			</ul>
+		</li>
+	</ul>
+	<h4 class="conclusion">Technical<br>(Increasingly) Popular research tracks.</h4>
+</div>
+
+<div class="slide">
+	<h2>Linked Data archiving as the <b>process</b></h2>
+	<ul>
+		<li>Some technological building blocks
+			<ul>
+				<li>Linked Data interfaces, change detection, publishing, crawling & querying</li>
+			</ul>
+		</li>
+	</ul>
+	<h4 class="conclusion">Technical, as well as Infrastructural & Societal.<br>Rather unknown territory (but there are
+		technologies).</h4>
+</div>
+
+<div class="slide">
+	<h2>What assumptions are there about data evolution?</h2>
+	<ul>
+		<li>Versioned Data?
+			<ul>
+				<li>Provenance is a directed acyclic graph.</li>
+				<li>Multiple truths can exist at the same time.</li>
+			</ul>
+		</li>
+		<li>Historical Data?
+			<ul>
+				<li>Provenance is a timeline.</li>
+				<li>Only truth can exist at the same time.</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
 <div class="slide">
-	<h2>Versioning</h2>
+	<h2>Issues expand with Linked Data</h2>
+	<ul>
+		<li>Link Rot</li>
+		<li>Content Drift</li>
+		<li><b>Concept Drift</b>
+			<ul>
+				<li>"Please don't change your vocabulary" (Check out DRIFT-A-LOD workshop)</li>
+				<li>Problem in other domains as well (Machine Learning)</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+
+<div class="slide">
+	<h2>Concept Drift</h2>
 
 </div>
 
 <div class="slide">
-	<h2>Transactional</h2>
-</div>
-
-<div class="slide">
-	<figure class="cover">
-		<img src="images/transaction-tree.jpg" alt="">
-	</figure>
-</div>
-
-
-<div class="slide">
-	<h2>Snapshot</h2>
-
-</div>
-
-<div class="slide">
-	<h2>Archivability</h2>
-
-</div>
-
-<div class="slide" id="toc-future">
-	<h2>Web of Linked Data</h2>
-
-</div>
-
-<div class="slide" id="toc-future">
 	<h2>Reproducibility of Query results</h2>
 	<ul>
 		<li>Sustain the validity of claims</li>
 		<li>Backwards compatibility of applications</li>
 	</ul>
+</div>
+
+<div class="slide">
+	<h2>Who is responsible for archiving?</h2>
+	<ul>
+		<li>Publisher
+			<ul>
+				<li>Snapshot</li>
+				<li>Versioning systems</li>
+			</ul>
+		</li>
+
+		<li>3rd party
+			<ul>
+				<li>Traditional</li>
+			</ul>
+		</li>
+
+		<li>Hybrid: Publisher and/or 3rd party
+			<ul>
+				<li>Transactional</li>
+				<li>Notification-based</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h2>Persistent Identification</h2>
+</div>
+
+
+<div class="slide">
+	<h2>Robust Links</h2>
+</div>
+
+
+<div class="toc slide" id="#toc-future">
+	<h2>Preserving a Web of Linked Data</h2>
+	<ol>
+		<li><a href="#toc-past" class="grayed"><strong>Yesterday:</strong> Web archiving strategies</a></li>
+		<li><a href="#toc-present" class="grayed"><strong>Today:</strong> tools for a Web of Linked Data</a></li>
+		<li><a href="#toc-future"><strong>Tomorrow:</strong> things to keep in mind</a></li>
+	</ol>
 </div>
 
 <div class="slide">
@@ -228,43 +323,12 @@
 </div>
 
 <div class="slide">
-	<h2>Issues</h2>
-	<ul>
-		<li>Link Rot</li>
-		<li>Content Drift</li>
-		<li><b>Concept Drift</b>
-			<ul>
-				<li>"Please don't change your vocabulary" (Check out DRIFT-A-LOD workshop)</li>
-				<li>Problem in other domains as well Machine Learning</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<div class="slide" id="toc-future">
-	<h2>Concept Drift</h2>
-
-</div>
-
-<div class="slide">
-	<h2>Persistent Identification</h2>
-</div>
-
-
-<div class="slide">
-	<h2>Robust Links</h2>
-</div>
-
-<div class="slide">
+	<h2>Archivability</h2>
 	<figure class="cover">
 		<img src="images/op-dhsi-digital-preservation2.jpg" alt="">
 	</figure>
 </div>
 
-<div class="slide">
-	<h2>Archivability</h2>
-
-</div>
 
 <div class="slide">
 	<h2>Linked Data is <em>in essence</em> easier to archive.</h2>
@@ -275,246 +339,34 @@
 </div>
 
 <div class="slide">
+	<h2>Accessibility of content to stimulate archiving.</h2>
+	<blockquote>
+		<p>The content in HTML+RDFa that dokieli produces is accessible (readable) without requiring any CSS or
+			JavaScript, ie. <strong>text-browser safe</strong>. Breaking this "rule" in future development should be
+			considered an <strong>anti-pattern (or a bug)</strong> in dokieli.</p>
+		<cite><a href="https://dokie.li/docs#document-status">dokieli documentation</a>, Sarven Capadisli</cite>
+	</blockquote>
+</div>
+
+<div class="slide" id="linked-data-fragments-definition">
+	<h2>
+		Choices in Linked Data publication facilitate or hinder archiving.
+	</h2>
+	<dl>
+		<dt>Intelligent Server</dt><dd>High resource granularity</dd>
+		<dt>Intelligent Client</dt><dd>Data not as accessible</dd><dd><em>Need to participate in archiving process</em></dd>
+	</dl>
+	<iframe class="image axis" src="images/tpf-axis.svg"></iframe>
+</div>
+
+
+<div class="slide">
 	<h2>Prevent mistakes from the past: complexity of the client & publishing</h2>
 	<ul>
-		<li>Technology: Dokeili</li>
 		<li>Standardisation: make sure this is thought of</li>
 	</ul>
 </div>
 
-
-
-<!--<div class="slide">-->
-<!--<h2>Get main messages across more clearly<br>-->
-<!--by titling each slide with a full sentence.</h2>-->
-<!--<p>Slide texts can be <em>full sentences</em>,-->
-<!--<br>with <strong>more words</strong> for extended context,<br>-->
-<!--but only as many as your messages need.-->
-<!--</p>-->
-<!--<p>Slide texts can be <em>full sentences</em>,-->
-<!--<br>with <a href="#">hyperlinks</a> you can click.</p>-->
-<!--<p>Slide texts can be <em>full sentences</em>,-->
-<!--<br>with <strong>more words</strong> for extended context.</p>-->
-<!--<footer>-->
-<!--<p>Slides can have footers with more information.</p>-->
-<!--<p>They provide extra <a href="#">content</a>.</p>-->
-<!--</footer>-->
-<!--</div>-->
-
-<!--<div class="slide">-->
-<!--<h2>One line is possible as well.</h2>-->
-<!--<ul>-->
-<!--<li>-->
-<!--Main point-->
-<!--<ul>-->
-<!--<li>Relevant subpoint</li>-->
-<!--<li>Another relevant subpoint</li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--<li>-->
-<!--Another main point-->
-<!--<ul class="inline">-->
-<!--<li>first</li>-->
-<!--<li>second</li>-->
-<!--<li>third inline point</li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--<li>-->
-<!--Yet another main point-->
-<!--<ul>-->
-<!--<li>-->
-<!--inline enumeration:-->
-<!--<ul class="inline">-->
-<!--<li>first</li>-->
-<!--<li>second</li>-->
-<!--<li>third</li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-
-<!--<div class="slide">-->
-<!--<h2>You can use ordered lists<br> to indicate successive steps.</h2>-->
-<!--<ol>-->
-<!--<li>-->
-<!--Main point-->
-<!--<ol>-->
-<!--<li>Relevant subpoint</li>-->
-<!--<li>Another relevant subpoint</li>-->
-<!--</ol>-->
-<!--</li>-->
-<!--<li>-->
-<!--Another main point-->
-<!--<ol class="inline">-->
-<!--<li>first</li>-->
-<!--<li>second</li>-->
-<!--<li>third inline point</li>-->
-<!--</ol>-->
-<!--</li>-->
-<!--<li>-->
-<!--Yet another main point-->
-<!--<ul>-->
-<!--<li>-->
-<!--inline enumeration:-->
-<!--<ol class="inline">-->
-<!--<li>first</li>-->
-<!--<li>second</li>-->
-<!--<li>third</li>-->
-<!--</ol>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--</ol>-->
-<!--</div>-->
-
-
-<!--<div class="slide">-->
-<!--<h2>This is a block quote<br>by an important person.</h2>-->
-<!--<blockquote>-->
-<!--<p>Flannel bicycle rights locavore selfies skateboard. Authentic <q>fanny pack</q> paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester.</p>-->
-<!--<cite>Yours Truly</cite>-->
-<!--</blockquote>-->
-<!--</div>-->
-
-<!--<div class="slide">-->
-<!--<h2>Custom List Bullets</h2>-->
-<!--<ul>-->
-<!--<li value="+">Helvetica narwhal</li>-->
-<!--<li value="+">Disrupt Williamsburg fixie</li>-->
-<!--</ul>-->
-<!--<ol>-->
-<!--<li value="3">Occupy locavore blog</li>-->
-<!--<li value="2">Skateboard pork belly</li>-->
-<!--<li value="1">Food truck gluten-free disrupt Portland</li>-->
-<!--</ol>-->
-<!--</div>-->
-<!--<div class="slide grid">-->
-<!--<h2>Two Columns</h2>-->
-<!--<p class="double">Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch American Apparel letterpress. Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa. Echo Park 8-bit sustainable.</p>-->
-<!--</div>-->
-<!--<div class="slide grid">-->
-<!--<h2>Three Columns</h2>-->
-<!--<p class="triple">Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch American Apparel letterpress. Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa. Echo Park 8-bit sustainable.</p>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2>Simple Table</h2>-->
-<!--<table>-->
-<!--<thead>-->
-<!--<tr>-->
-<!--<th scope="col">Gentrify</th>-->
-<!--<th>Twee</th>-->
-<!--<th>Artisan</th>-->
-<!--</tr>-->
-<!--</thead>-->
-<!--<tbody>-->
-<!--<tr>-->
-<!--<th scope="row">Messenger</th>-->
-<!--<td>Mixtape</td>-->
-<!--<td>Small batch</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<th scope="row">Meggings</th>-->
-<!--<td>Freegan</td>-->
-<!--<td>Retro biodiesel</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<th scope="row">Vegan</th>-->
-<!--<td>Occupy</td>-->
-<!--<td>Normcore</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<th scope="row">Next level</th>-->
-<!--<td>Selfies</td>-->
-<!--<td>Sustainable</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<th scope="row">Umami</th>-->
-<!--<td>Asymmetrical</td>-->
-<!--<td>Keytar</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<th scope="row">Biodiesel</th>-->
-<!--<td>Haven’t heard</td>-->
-<!--<td>Skateboard</td>-->
-<!--</tr>-->
-<!--</tbody>-->
-<!--</table>-->
-<!--</div>-->
-
-<!--<div class="slide">-->
-<!--<h2>This slide illustrates<br>-->
-<!--what program code looks like.</h2>-->
-<!--<pre><code>&lt;html lang="en"&gt;-->
-<!--<mark>&lt;head&gt;</mark> <span class="comment">&lt;!&#45;&#45;Comment&#45;&#45;&gt;</span>-->
-<!--&lt;title&gt;Shower&lt;/title&gt;-->
-<!--&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;-->
-<!--&lt;link rel="stylesheet" href="s/screen.css"&gt;-->
-<!--&lt;script src="j/jquery.js"&gt;&lt;/script&gt;-->
-<!--<mark>&lt;/head&gt;</mark></code></pre>-->
-<!--</div>-->
-
-<!--<div class="grid slide">-->
-<!--<h2>Grid Slide</h2>-->
-<!--</div>-->
-<!--<div class="white slide">-->
-<!--<h2>White Slide</h2>-->
-<!--</div>-->
-<!--<div class="dark slide">-->
-<!--<h2>Dark Slide</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2 class="shout">Shout</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2 class="shout">Multiline<br>Shout</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2 class="shout"><a href="">Linked Shout</a></h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2 class="shout grow">Growing Shout</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2 class="shout shrink">Shrinking Shout</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<figure class="cover">-->
-<!--<img src="pictures/exact.png" alt="">-->
-<!--<figcaption class="white">Copyright © 2016 <a href="">Yours Truly</a>, Famous Inc.</figcaption>-->
-<!--</figure>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<img src="pictures/tall.png" alt="" class="cover">-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<img src="pictures/wide.png" alt="" class="cover">-->
-<!--</div>-->
-<!--<div class="white slide">-->
-<!--<img src="pictures/square.png" alt="" class="place top left">-->
-<!--<img src="pictures/square.png" alt="" class="place top">-->
-<!--<img src="pictures/square.png" alt="" class="place top right">-->
-<!--<img src="pictures/square.png" alt="" class="place left">-->
-<!--<img src="pictures/square.png" alt="" class="place">-->
-<!--<img src="pictures/square.png" alt="" class="place right">-->
-<!--<img src="pictures/square.png" alt="" class="place bottom left">-->
-<!--<img src="pictures/square.png" alt="" class="place bottom">-->
-<!--<img src="pictures/square.png" alt="" class="place bottom right">-->
-<!--</div>-->
-<!--<div class="slide" data-timing="00:03">-->
-<!--<h2 class="shout">Timer</h2>-->
-<!--</div>-->
-<!--<div class="slide">-->
-<!--<h2>This list can be navigated<br>using your keyboard.</h2>-->
-<!--<ul>-->
-<!--<li>Ennui keffiyeh thundercats</li>-->
-<!--<li class="next">Jean shorts biodiesel</li>-->
-<!--<li class="next">Terry richardson, swag blog</li>-->
-<!--<li class="next">Locavore umami vegan helvetica</li>-->
-<!--<li class="next">Fingerstache kale chips</li>-->
-<!--</ul>-->
-<!--</div>-->
 <div class="progress"></div>
 <footer>
 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>

@@ -32,7 +32,7 @@
 </div>
 
 <div class="slide">
-	<h2>There are many sides<br>to preservation.<br><br>This talk is on practice.</h2>
+	<h2>There are many sides<br>to preservation.</h2>
 	<img class="cover place top right" src="images/preservation.png" alt="">
 </div>
 
@@ -82,7 +82,7 @@
 </div>
 
 <div class="slide">
-	<h2>Link Rot</h2>
+	<h2 style="color:white">Link Rot</h2>
 
 	<figure class="cover height">
 		<img src="images/referencerot.jpg" alt="">
@@ -98,6 +98,8 @@
 
 <div class="slide">
 	<h2>Content Drift</h2>
+	<img class="cover place center" src="images/contentdrift.jpg" alt="">
+	<h3 class="place bottom center">Significant change in content within a 3-Month Period</h3>
 </div>
 
 <div class="slide">
@@ -122,6 +124,12 @@
 		<li><a href="#toc-present" class="grayed"><strong>Today:</strong> Tools for a Web of Linked Data</a></li>
 		<li><a href="#toc-future" class="grayed"><strong>Tomorrow:</strong> Things to keep in mind</a></li>
 	</ol>
+</div>
+
+<div class="slide">
+	<figure class="cover">
+		<img src="images/internetarchive.png" alt="">
+	</figure>
 </div>
 
 <div class="slide">
@@ -177,7 +185,9 @@
 
 <div class="slide">
 	<h2>Memento: travelling to the Web of the Past</h2>
-	<img class="place center" src="images/memento.png" alt="">
+		<img class="place cover center" src="images/memento.png" alt="">
+	<p class="place bottom"><a href="https://tools.ietf.org/html/rfc7089">https://tools.ietf.org/html/rfc7089</a></p>
+
 </div>
 
 <div class="toc slide" id="#toc-present">
@@ -190,7 +200,7 @@
 </div>
 
 <div class="slide">
-	<h2 class="shout">Archive or <i>Archiving</i>?</h2>
+	<h2 class="shout">Archive or <em>Archiving</em>?</h2>
 </div>
 
 <div class="slide">
@@ -207,7 +217,7 @@
 			</ul>
 		</li>
 	</ul>
-	<h4 class="conclusion">Technical<br>(Increasingly) Popular research tracks.</h4>
+	<h3 class="conclusion">Technical<br>(Increasingly) Popular research tracks.</h3>
 </div>
 
 <div class="slide">
@@ -219,23 +229,24 @@
 			</ul>
 		</li>
 	</ul>
-	<h4 class="conclusion">Technical, as well as Infrastructural & Societal.<br>Rather unknown territory (but there are
-		technologies).</h4>
+	<h3 class="conclusion">Technical, as well as Infrastructural & Societal.<br>Rather unknown territory (but there are
+		technologies).</h3>
 </div>
 
 <div class="slide">
 	<h2>What assumptions are there about data evolution?</h2>
 	<ul>
-		<li>Versioned Data?
-			<ul>
-				<li>Provenance is a directed acyclic graph.</li>
-				<li>Multiple truths can exist at the same time.</li>
-			</ul>
-		</li>
 		<li>Historical Data?
 			<ul>
 				<li>Provenance is a timeline.</li>
 				<li>Only truth can exist at the same time.</li>
+				<li><em>Timeseries databases, Wikipedia</em></li>
+			</ul>
+		</li>
+		<li>Versioned Data?
+			<ul>
+				<li>Provenance is a directed acyclic graph.</li>
+				<li>Multiple truths can exist at the same time.</li>
 			</ul>
 		</li>
 	</ul>
@@ -257,12 +268,29 @@
 
 
 <div class="slide">
-	<h2>Concept Drift</h2>
-
+	<h2>Study these issues within Linked Data</h2>
+	<ul>
+		<li>Link Rot
+			<ul>
+				<li>Subject or Object cannot be dereferenced</li>
+				<li>Dataset/Interface is gone</li>
+			</ul>
+		</li>
+		<li>Content Drift
+			<ul>
+				<li>Context graph of Subject or Object has changed</li>
+			</ul>
+		</li>
+		<li>Concept Drift
+			<ul>
+				<li>Predicate or Object change meaning</li>
+			</ul>
+		</li>
+	</ul>
 </div>
 
 <div class="slide">
-	<h2>Reproducibility of Query results</h2>
+	<h2>Archiving for the <br><em>Reproducibility of Query results</em></h2>
 	<ul>
 		<li>Sustain the validity of claims</li>
 		<li>Backwards compatibility of applications</li>
@@ -272,6 +300,14 @@
 
 <div class="slide">
 	<h2>Persistent Identification</h2>
+</div>
+
+<div class="slide">
+	<h2>Who are you to tell me my URI is not persistent?</h2>
+	<p>ISWC Resources track:</p>
+	<img width="100%" src="images/resources-pid.png" alt="">
+	<p><em>Consensus on and trust in</em> persistence in a decentralized Web:<br>community-driven? standardization? blockchain,...?</p>
+
 </div>
 
 <div class="slide">
@@ -286,7 +322,18 @@
 
 <div class="slide">
 	<h2>Robust Links</h2>
+	<h3>Open Annotation<br>& Memento<br><br>Can be linked<br>to PROV</h3>
 	<img class="cover height place bottom" src="images/RobustLinksLinkedData.png" alt="">
+</div>
+
+<div class="slide strategy">
+	<h2>Open challenges with Memento</h2>
+	<dl>
+		<dt>Real-time data</dt>
+		<dd>HTTP Datetime format is per second</dd>
+		<dt>Parallel truths</dt>
+		<dd>No solution for accessing <em>versions</em></dd>
+	</dl>
 </div>
 
 <div class="slide">
@@ -316,30 +363,83 @@
 
 <div class="slide strategy">
 	<h2>Snapshot</h2>
-	<p>LDF+HDT</p>
+	<ul>
+		<li>Often "End of Term" archive (DBPedia version)</li>
+		<li>Exchangeable archives, eg. file-based HDT</li>
+	</ul>
 </div>
 
 <div class="slide strategy">
+	<figure class="cover">
+		<img src="images/hdtarchive.png" alt="">
+	</figure>
+</div>
+
+<div class="slide strategy">
+	<figure class="cover">
+		<img src="images/queryclient.png" alt="">
+	</figure>
+</div>
+
+
+<div class="slide strategy">
 	<h2>Versioning systems</h2>
-	<p>MediaWiki: Dydra, BEAR, </p>
-	<p>Snapshot + Versioning: Ostrich</p>
+	<ul>
+		<li>Memento support can improve: depends on query expressivity</li>
+		<li>Significant progress in the RDF domain</li>
+	</ul>
+	<dl>
+		<dt>Web</dt>
+		<dd>MediaWiki</dd>
+		<dt>RDF</dt>
+		<dd>Storage: Dydra, </dd>
+		<dd>Memento-supported publishing: DBpedia Wayback machine, Linked Data Fragments Server</dd>
+	</dl>
+</div>
+
+<div class="slide strategy">
+	<h2>Hybrid: Snapshot + Versioning</h2>
+	<p>Discrete snapshots + index for continuous versions</p>
+
+	<dl>
+		<dt>Linked Data pages</dt>
+		<dd><a href="Tailr">Tailr</a>, ...</dd>
+		<dt>Triple Patterns</dt>
+		<dd><a href="https://github.com/rdfostrich/ostrich">Ostrich (offset-enabled)</a>, ...</dd>
+	</dl>
+
+	<img class="cover place bottom" style="margin-bottom: 2em" src="images/regular-delta-chain.svg" alt="">
 </div>
 
 <div class="slide strategy">
 	<h2>Web archive</h2>
-	<p>targeted crawling, sindice LODLaundromat, Linked Data Crawling</p>
+	<ul>
+		<li>Not much in place yet</li>
+		<li>Indexes, but no notion of time: <a href="">Sindice</a>, <a href="">LODCache</a>, <a href="">LODLaundromat</a></li>
+		<li>Many technologies: targeted crawling, sindice LODLaundromat, Linked Data Crawling</li>
+		<li>No guarantees on completeness</li>
+	</ul>
 </div>
-
-
 
 <div class="slide strategy">
 	<h2>Transactional</h2>
-	<p>Interesting, but Challenge for completeness, How far would we get?</p>
+	<ul>
+		<li>Decentralized, sustainable solution</li>
+		<li>A challenge for <em>completeness</em>
+		<ul>
+			<li>Dependence on resource granularity<br>eg. SPARQL results or Linked Data pages?</li>
+		</ul>
+		</li>
+
+		<li>Interested to see how far we would get...</li>
+	</ul>
 </div>
 
 <div class="slide strategy">
 	<h2>Notification-based</h2>
-	<p>Linked Data Notifications</p>
+	<figure class="cover">
+		<img src="images/ldn-example.png" alt="">
+	</figure>
 </div>
 
 
@@ -359,6 +459,7 @@
 		<li>Product: transparency of the editorial process</li>
 		<li>Process: interaction with users, public</li>
 	</ul>
+	<p>Scolary communication, cultural heritage, legal publications, community databases (Wikipedia & Wikidata)</p>
 </div>
 
 <div class="slide">
@@ -372,7 +473,8 @@
 <div class="slide">
 	<h2>Linked Data is <em>in essence</em> easier to archive.</h2>
 	<ul>
-		<li>Raw, already machine processable data</li>
+		<li>Raw, self-contained data</li>
+		<li>Already machine processable/understandable</li>
 		<li>No obfuscation by client-side scripting</li>
 	</ul>
 </div>
@@ -389,7 +491,7 @@
 
 <div class="slide" id="linked-data-fragments-definition">
 	<h2>
-		Choices in Linked Data publication facilitate or hinder archiving.
+		Choices in Linked Data interface<br><em>increase</em> or <em>decrease</em> archiving.
 	</h2>
 	<dl>
 		<dt>Intelligent Server</dt><dd>High resource granularity</dd>
@@ -400,9 +502,11 @@
 
 
 <div class="slide">
-	<h2>Prevent mistakes from the past</h2>
+	<h2>Prevent mistakes from the past in <em>standardization</em></h2>
 	<ul>
-		<li>Standardisation: make sure this is thought of</li>
+		<li><b>Query interfaces:</b> what can be archived?</li>
+		<li><b>Protocols:</b> is it accessible?</li>
+		<li><b>Domain Modeling:</b> can the semantics be preserved? How to select the subgraph?</li>
 	</ul>
 </div>
 
@@ -416,8 +520,11 @@
 </div>
 
 <div class="slide">
-	<h2>To preserve the Web of Linked Data,<br>we have to act now,<br>on all fronts.</h2>
-	<h2>We don't start from scratch</h2>
+	<h2>There are many sides<br>to preservation.</h2>
+	<h3>We don't start from scratch,<br> many technologies are there.</h3>
+	<h3>Start covering the uncovered sides.</h3>
+	<h3>Add <em>archiving</em> to the discussion.</h3>
+	<img class="cover place top right" src="images/preservation.png" alt="">
 </div>
 
 <div class="title slide">

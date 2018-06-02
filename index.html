@@ -73,7 +73,7 @@
 </div>
 
 <div class="slide">
-	<h2>Practical issues</h2>
+	<h2>The forces of decay</h2>
 	<ul>
 		<li>Link Rot</li>
 		<li>Content Drift</li>
@@ -161,16 +161,19 @@
 <div class="slide strategy">
 	<h2>Web archive</h2>
 	<img class="cover place bottom" src="images/traditional.svg" alt="">
+	<p class="place bottom">See: Open Wayback</p>
 </div>
 
 <div class="slide strategy">
 	<h2>Versioning systems</h2>
 	<img class="cover place bottom" src="images/versioning.svg" alt="">
+	<p class="place bottom">See: MediaWiki</p>
 </div>
 
 <div class="slide strategy">
 	<h2>Transactional</h2>
 	<img class="cover place bottom" src="images/transactional.svg" alt="">
+	<p class="place bottom">See: SiteStory apache plugin</p>
 </div>
 
 <div class="slide strategy">
@@ -189,6 +192,19 @@
 	<p class="place bottom"><a href="https://tools.ietf.org/html/rfc7089">https://tools.ietf.org/html/rfc7089</a></p>
 
 </div>
+
+<div class="slide">
+	<figure class="cover">
+		<img src="images/dbpedia.png" alt="">
+	</figure>
+</div>
+
+<div class="slide">
+	<figure class="cover">
+		<img src="images/dbpedia_tg.png" alt="">
+	</figure>
+</div>
+
 
 <div class="toc slide" id="#toc-present">
 	<h2>Preserving a Web of Linked Data</h2>
@@ -211,9 +227,9 @@
 				<li>Dydra, Virtuoso, XRDF3X, ...</li>
 			</ul>
 		</li>
-		<li>Representing versions/time:
+		<li>Representations of versions, provenance & time:
 			<ul>
-				<li>PROV, LDPatch, ...</li>
+				<li>PROV, LDPatch, LODE, ...</li>
 			</ul>
 		</li>
 	</ul>
@@ -253,13 +269,13 @@
 </div>
 
 <div class="slide">
-	<h2>Issues expand with Linked Data</h2>
+	<h2>Decay becomes more complex </h2>
 	<ul>
 		<li>Link Rot</li>
 		<li>Content Drift</li>
 		<li><b>Concept Drift</b>
 			<ul>
-				<li>"Please don't change your vocabulary" (Check out DRIFT-A-LOD workshop)</li>
+				<li>"Please don't change your vocabulary" <br>(Check out DRIFT-A-LOD workshop)</li>
 				<li>Problem in other domains as well (Machine Learning)</li>
 			</ul>
 		</li>
@@ -295,11 +311,29 @@
 		<li>Sustain the validity of claims</li>
 		<li>Backwards compatibility of applications</li>
 	</ul>
+	<p><em>Federated querying is highly affected</em></p>
+	<h3>How to shape a decentralized Quality of Service?</h3>
+	<p><em>The Hyperlink is the simplest form of decentralization,<br>which we are already failing to preserve.</em></p>
 </div>
-
 
 <div class="slide">
 	<h2>Persistent Identification</h2>
+	<figure class="cover bottom">
+		<img width="45%" style="margin-top: 1em" src="images/pid.png" alt="">
+		<figcaption>Figure by Herbert Van de Sompel</figcaption>
+	</figure>
+</div>
+
+<div class="slide">
+	<h2>Persistent Identification</h2>
+
+	<ul>
+		<li>Dependency on publisher registering the PIDs</li>
+		<li>Possible loss of connection between PIDs and the original</li>
+		<li>Dependency on the PID provider</li>
+	</ul>
+
+	<h3>Possibly replacing one potential Link rot problem by another</h3>
 </div>
 
 <div class="slide">
@@ -332,7 +366,7 @@
 		<dt>Real-time data</dt>
 		<dd>HTTP Datetime format is per second</dd>
 		<dt>Parallel truths</dt>
-		<dd>No solution for accessing <em>versions</em></dd>
+		<dd>No solution for accessing <em>Versioned Data</em></dd>
 	</dl>
 </div>
 
@@ -385,14 +419,14 @@
 <div class="slide strategy">
 	<h2>Versioning systems</h2>
 	<ul>
-		<li>Memento support can improve: depends on query expressivity</li>
+		<li>Memento support can improve<ul><li>depends on query expressivity</li></ul></li>
 		<li>Significant progress in the RDF domain</li>
 	</ul>
 	<dl>
 		<dt>Web</dt>
 		<dd>MediaWiki</dd>
 		<dt>RDF</dt>
-		<dd>Storage: Dydra, </dd>
+		<dd>Storage: Dydra, Virtuoso, ...</dd>
 		<dd>Memento-supported publishing: DBpedia Wayback machine, Linked Data Fragments Server</dd>
 	</dl>
 </div>
@@ -415,8 +449,8 @@
 	<h2>Web archive</h2>
 	<ul>
 		<li>Not much in place yet</li>
-		<li>Indexes, but no notion of time: <a href="">Sindice</a>, <a href="">LODCache</a>, <a href="">LODLaundromat</a></li>
-		<li>Many technologies: targeted crawling, sindice LODLaundromat, Linked Data Crawling</li>
+		<li>Indexes, but no notion of time<ul><li><a href="">Sindice</a>, <a href="">LODCache</a>, <a href="">LODLaundromat</a></li></ul> </li>
+		<li>Many technologies<ul><li>targeted crawling, sindice LODLaundromat, Linked Data Crawling, ...</li></ul></li>
 		<li>No guarantees on completeness</li>
 	</ul>
 </div>
@@ -463,7 +497,7 @@
 </div>
 
 <div class="slide">
-	<h2>Archivability</h2>
+	<h2>Archivability of Linked Data</h2>
 	<figure class="cover">
 		<img src="images/op-dhsi-digital-preservation2.jpg" alt="">
 	</figure>
